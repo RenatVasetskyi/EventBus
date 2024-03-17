@@ -1,7 +1,7 @@
-using System;
+using EventBus.Events;
 using UnityEngine;
 
-namespace EventBus
+namespace EventBus.Test
 {
     public class Player : MonoBehaviour
     {
@@ -11,7 +11,7 @@ namespace EventBus
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                EventBus<PlayerEvent>.Raise(new PlayerEvent()
+                EventBus<PlayerEvent>.Raise(new PlayerEvent
                 {
                     Health = 10,
                     Mana = 5

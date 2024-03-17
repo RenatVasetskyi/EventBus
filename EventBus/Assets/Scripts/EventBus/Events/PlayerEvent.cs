@@ -1,6 +1,6 @@
 using EventBus.Interfaces;
 
-namespace EventBus
+namespace EventBus.Events
 {
     public struct PlayerEvent : IEvent
     {
