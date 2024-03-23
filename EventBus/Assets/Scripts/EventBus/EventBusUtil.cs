@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace EventBus
 {
-    public class EventBusUtil
+    public static class EventBusUtil
     {
         public static IReadOnlyList<Type> EventTypes { get; set; }
         public static IReadOnlyList<Type> EventBusTypes { get; set; }

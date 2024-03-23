@@ -8,12 +8,12 @@ namespace EventBus
     {
         private static readonly HashSet<IEventBinding<T>> Bindings = new();
 
-        public static void Register(EventBinding<T> binding)
+        public static void Register(IEventBinding<T> binding)
         {
             Bindings.Add(binding);
         }
         
-        public static void UnRegister(EventBinding<T> binding)
+        public static void UnRegister(IEventBinding<T> binding)
         {
             Bindings.Remove(binding);
         }

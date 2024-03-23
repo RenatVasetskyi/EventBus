@@ -1,11 +1,12 @@
 using EventBus.Events;
+using EventBus.Interfaces;
 using UnityEngine;
 
 namespace EventBus.Test
 {
     public class Player : MonoBehaviour
     {
-        private EventBinding<PlayerEvent> _playerEventBinding;
+        private IEventBinding<PlayerEvent> _playerEventBinding;
 
         private void Update()
         {
